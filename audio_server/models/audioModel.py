@@ -54,9 +54,7 @@ class UpdateAudioBookModel(UpdateAudioModel):
 
     author: Optional[str]
     narrator : Optional[str]
-    duration: Optional[int]
-    upload: datetime
-
+    
 
 
 
@@ -68,5 +66,5 @@ def ResponseModel(data, message):
     }
 
 
-def ErrorResponseModel(error, message ,code=404): ###
+def ErrorResponseModel(error, message ,code=500): ###
     return {"error": error, "code": code, "message": message}
