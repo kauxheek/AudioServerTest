@@ -28,7 +28,7 @@ def song_helper(song) -> dict:
 def audiobook_helper(audiobook) -> dict:
     return {
         "id": str(audiobook["_id"]),
-        "title": audiobook["title"],
+        "title": audiobook["name"],
         "author": audiobook["author"],
         "duration": audiobook["duration"],
         "upload": audiobook["upload"],
